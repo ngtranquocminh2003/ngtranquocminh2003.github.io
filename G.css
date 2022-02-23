@@ -1,0 +1,318 @@
+.body{
+    background-color: rgba(255, 255, 255, 0.842);
+    margin:0;
+    
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li {
+     position: relative;
+
+}
+.menu .childMenu {
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 2px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 1px  black ;
+}
+.menu  ul a {
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0px 10px ;
+    
+
+}
+.menu ul ul a :hover{
+    background-color: white;
+    color: black;
+}
+
+.menu .childMenu{
+    width: 200px;
+    height: 485px;
+    
+    border: 2px solid black;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-shadow: 0px 0px 1px black;
+    display: none;
+    overflow: hidden;
+}
+
+.menu li:hover .childMenu{
+    display: block;
+    animation: animation 2s;
+    color: #585b5f;
+    
+} 
+.menu li >a:hover .childMenu{
+    display: block;
+    color: #585b5f;
+   
+}
+
+@keyframes animation {
+    from {height: 0px;}
+    to {height: 485px;}
+  }
+  
+
+.topnav{
+    background-color: rgb(41, 40, 40);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topnav a{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size:large;
+    transition:all .5s; 
+}
+.topnav img {
+    padding-left:20px;
+}
+.topnav a:hover{
+    background-color: white;
+    color: rgb(49, 48, 48); 
+}
+.box{
+   
+    height: 13%;
+    width: 100%;
+    background-color: black;
+    
+}
+.right{
+    float: left;
+    width: 30%;
+    position: relative;
+    padding-left: 175px;
+    padding-top: 41px;
+}
+.khung{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+}
+.card-news{
+ width: 272px   ;
+ height: 257px ;
+ background-color: white;
+ margin: 15px; 
+ padding: 20px; 
+ position:none;
+ 
+ float: left;
+ border: 1px solid black;
+ box-shadow: 10px -3px rgb(201, 190, 190);
+ 
+
+
+}
+.card-news:hover{
+    filter: opacity(60%);
+    transform: scale(1.1);
+}
+.img{
+    width: 100%;
+    height: 170px;
+
+}
+.row::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.leftcolumn{
+    float:left;
+    width: 80%;
+    padding-left: ;
+    
+}
+.rightcolumn{
+    float:left;
+    width: 10%;
+   
+    padding-left: 20px;
+}
+.thongtin{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    color: rgb(75, 73, 73);
+
+}
+.gia{
+  font-size: 75%;
+  color: black;
+}
+.text{
+    font-size: 15px;
+    line-height:3px;
+    
+}.text p>strong>{
+    color: rgb(107, 105, 101);
+    
+}
+.text ul li {
+    line-height: 18px;
+}
+.text2{
+    margin-top: 40px;
+}
+.text1{
+    font-size: 0.75rem;
+    text-align: left;
+    color: #585b5f;
+    
+}
+.chu{
+    height: 90px;
+}
+.text2{
+    text-align: center;
+    font-size: 20px;   
+    width: 300px;
+    position:none;
+    
+}
+.text2 a  {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+
+  
+    
+}
+.text a :hover{
+    color: aqua;
+   
+  
+}
+
+.text2 .boxInfo{
+    width: 232px;
+    height: 76px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top: 20px;
+    display: none;
+    border-radius: 10px;
+    left: 50%;
+    transform:translateX(-50%);    
+}
+.text2:hover .boxInfo{
+    display: block;
+    
+}
+
+.menu.boxInfo{
+    width: 232px;
+    height: 76px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top: 20px;
+    display: none;
+    border-radius: 10px;
+    left: 50%;
+    transform:translateX(-50%);   
+}
+.intro{
+    color: #585b5f;
+    font-size: 10px;
+}
+.Menufooter{
+    float:left;
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+}
+.trai{
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: #131414;
+}
+.trai>p {
+    color: aliceblue;
+    font-size: 20px;
+    left: 20px;
+    position: relative;
+}
+.giua{
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: #131414;
+}
+.giua>p {
+    color: white;
+position: relative;
+left: 200px;
+}
+.phai{
+    width: 20%;
+    height: 100%;
+    float: right;
+    background-color: #131414;
+}
+.card-news1{
+    width: 170px   ;
+    height: 585px ;
+    background-color: rgb(255, 255, 255); 
+    padding: 20px; 
+    margin: 10px; 
+    float: left;
+    border: 1px solid rgb(0, 0, 0); 
+   }
+.card-news1 h3 {
+    font-size: 17px;
+    color: #585b5f;
+}
+.info{
+  
+  width: 100%;
+  height: 100px;  
+}
+.info a{
+   line-height: 40px;
+   color: #585b5f; 
+   
+   
+   }
+.info :hover{
+    background-color: #252727;
+    border: 2px solid black;
+    padding: 5px 55px ;
+    margin:0px;
+    color: white;
+    transition: all 1.2s;
+    
+}
+
+   
+
